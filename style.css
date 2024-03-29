@@ -1,0 +1,26 @@
+html {
+    background-color: #eee;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 5em;
+    width: 40vw;
+    margin: auto;
+    display: block;
+
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+}
+
+header img {
+    height: 70%;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
