@@ -16,11 +16,18 @@ header {
     border-radius: 0 0 50px 50px;
 }
 
-header img {
-    height: 70%;
-
+header .logo {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    display: block;
+    height: 3.5em;
+    width: 5em;
+}
+
+header .logo img {
+    height: 3.5em;
+    width: 5em;
 }
