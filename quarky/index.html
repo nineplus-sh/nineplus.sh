@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ninePLUS Quarky</title>
+        <meta name="description" content="The world's silliest chat app.">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <meta name="robots" content="noindex">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@2.0.0-beta.2/dist/ua-parser.pack.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="/" class="logo"><img src="../img/nineplus.svg"></a>
+        </header>
+
+        <main>
+            <hero>
+                <cta>
+                    <img src="quarkymark.svg" alt="Stylized wordmark of Quarky, with the Quarky speech bubble sticking out of the Y" class="quarkymark">
+                    <p>The world's silliest chat app.</p>
+                    <div id="download" class="button disabled" onclick="download()">
+                        Detecting platform...
+                    </div>
+                    <div class="button" onclick="document.location.href = 'https://quarky.nineplus.sh'">Open in browser</div>
+                </cta>
+                <screenie>
+                    <img src="login.png" class="floater">
+                    <img src="crash.png" class="floater">
+                    <img src="chat.png">
+                </screenie>
+            </hero>
+
+            <pitches>
+                <h2>Why use Quarky?</h2>
+                <img src="vukkyshrug.png" alt="A Vukky shrugging.">
+            </pitches>
+        </main>
+
+        <dialog id="downloadconfirm">
+            <img src="package.png" class="downloadgraphic">
+            <p>To continue, wait for <b><span id="downloadfilename"></span></b> to download, then open it.</p>
+        </dialog>
+    </body>
+</html>

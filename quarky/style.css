@@ -1,0 +1,192 @@
+html {
+    background-color: #eee;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    height: 5em;
+    width: 40vw;
+    display: block;
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+
+    filter: drop-shadow(0px 5px 0px #c1c1c1);
+}
+
+header .logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    height: 3.5em;
+    width: 10.5em;
+}
+
+header .logo img {
+    height: 3.5em;
+}
+
+hero {
+    display: flex;
+    height: 45em;
+    background-image: url("space.gif");
+    color: white;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hero .quarkymark {
+    width: 10em;
+    padding-left: 1em;
+}
+
+cta {
+    z-index: 3;
+    background-color: rgba(0, 168, 243, 50%);
+    padding: 1em 1em 1em 32vw;
+    margin-top: 4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+cta .button {
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 10px;
+
+    background-color: #eeeeee;
+    color: black;
+    box-shadow: 0 5px #696969;
+
+    cursor: pointer;
+}
+cta .button.disabled {
+    background-color: #7b7b7b;
+    box-shadow: 0 5px #3b3b3b;
+}
+cta .button:not(.disabled):active {
+    background-color: #7b7b7b;
+    box-shadow: 0 3px #3b3b3b;
+    transform: translateY(4px);
+}
+cta .button:first-of-type {
+    padding: 1em;
+}
+
+#downloadversion {
+    color: #484848;
+    font-size: small;
+    float: right;
+}
+
+.dlicon {
+    position: relative;
+}
+
+screenie {
+    display: block;
+    width: 800px;
+    height: 380px;
+}
+
+screenie img {
+    position: absolute;
+}
+
+screenie img:nth-child(1) {
+    transform: rotate(13deg) translateY(-10em) translateX(22em);
+    z-index: 2;
+    width: 304px;
+    filter: drop-shadow(-15px 15px 25px black);
+}
+screenie img:nth-child(2) {
+    transform: rotate(-9deg) translateY(12em) translateX(-8em);
+    z-index: 2;
+    width: 304px;
+    filter: drop-shadow(15px 15px 25px black);
+}
+screenie img:nth-child(3) {
+    width: 604px;
+    filter: drop-shadow(15px 15px 25px black);
+}
+
+.downloadgraphic {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+pitches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog **/
+dialog[open] {
+    animation: fade-in 0.7s cubic-bezier(1.000, -0.250, 0.000, 1.250);
+}
+
+dialog[open]::backdrop {
+    background-color: rgb(0 168 243 / 50%);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+        display: block;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: scaleY(1);
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleY(0);
+        display: none;
+    }
+}
+
+@keyframes backdrop-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
