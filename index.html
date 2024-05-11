@@ -27,6 +27,7 @@
                 border-radius: 10px;
                 margin-right: 1em;
                 margin-bottom: 1em;
+                user-select: none;
             }
             .project .logo {
                 width: 6em;
@@ -44,6 +45,13 @@
                 border: 1px dashed #bbb;
                 box-sizing: border-box;
                 background-color: #eee;
+            }
+
+            .project:hover {
+                transform: translateY(-5px);
+            }
+            .project:active {
+                transform: translateY(0px);
             }
         </style>
     </head>
