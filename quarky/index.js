@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", async function() {
 
 function download() {
     if(document.querySelector("#download").classList.contains("disabled")) return;
-    window.open(window.releaseData.download, "_blank");
+    document.location.href = window.releaseData.download;
     document.querySelector("#downloadconfirm").showModal();
 }
