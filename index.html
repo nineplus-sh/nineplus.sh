@@ -9,10 +9,9 @@
 
         <style>
             #projectcontainer {
-                display: flex;
-                flex-wrap: wrap;
-                padding-top: 2em;
-                padding-bottom: 1em;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1em;
             }
             .projectlink {
                 text-decoration: none;
@@ -22,11 +21,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 15em;
                 height: 10em;
                 border-radius: 10px;
-                margin-right: 1em;
-                margin-bottom: 1em;
                 user-select: none;
             }
             .project .logo {
@@ -52,6 +48,16 @@
             }
             .project:not(.construction):active {
                 transform: translateY(0px);
+            }
+
+            .ninebutton {
+                cursor: pointer;
+            }
+            #freebutton textarea {
+                resize: none;
+                width: 88px;
+                height: 31px;
+                border: none;
             }
         </style>
     </head>
@@ -86,6 +92,12 @@
                     <img src="img/notfound.svg" class="logo">
                     <p class="tagline">under construction</p>
                 </div>
+            </div>
+
+            <div id="freebutton">
+                <h2>ninePLUS buttons</h2>
+                <p>If you have your own website, you can add a ninePLUS button.</p>
+                <img src="img/buttons/transdark.png"> <textarea onclick="this.focus();this.select()" readonly="readonly"><a href="https://www.nineplus.sh"><img src="https://www.nineplus.sh/img/buttons/transdark.png"></a></textarea>
             </div>
         </main>
 
