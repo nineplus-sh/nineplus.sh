@@ -8,57 +8,15 @@
         <meta name="robots" content="noindex">
 
         <style>
-            #projectcontainer {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1em;
+            main {
+                display: flex;
+                justify-content: center;
             }
-            .projectlink {
-                text-decoration: none;
-            }
-            .project {
+            form[class*="embeddedForm__"] {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                height: 10em;
-                border-radius: 10px;
-                user-select: none;
-            }
-            .project .logo {
-                width: 6em;
-                height: 5em;
-            }
-            .project .tagline {
-                margin-top: 0.5em;
                 text-align: center;
-            }
-            .project.quarky {
-                background-image: url("quarky/space.gif");
-                color: white;
-            }
-            .project.construction {
-                border: 1px dashed #bbb;
-                box-sizing: border-box;
-                background-color: #eee;
-            }
-
-            .project:not(.construction):hover {
-                transform: translateY(-5px);
-                filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
-            }
-            .project:not(.construction):active {
-                transform: translateY(0px);
-            }
-
-            .ninebutton {
-                cursor: pointer;
-            }
-            #freebutton textarea {
-                resize: none;
-                width: 88px;
-                height: 31px;
-                border: none;
             }
         </style>
     </head>
@@ -68,6 +26,7 @@
         </header>
 
         <main>
+            <noscript>This form requires JavaScript.</noscript>
             <script id="1f7dda6d-f041-44d3-a5f4-0f93df0168c7" data-yt-url="https://youtrack.litdevs.org" src="https://youtrack.litdevs.org/static/simplified/form/form-entry.js" data-theme="light" data-lang="en"></script>
         </main>
 
