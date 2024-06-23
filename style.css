@@ -1,5 +1,10 @@
 html {
-    background-color: #eee;
+    --full-bg: #eeeeeeff;
+    --minor-bg: #eeeeee99;
+    --minor-bg-percent: -400%;
+    --full-bg-percent: 100%;
+    background: linear-gradient(to top, var(--minor-bg) var(--minor-bg-percent), var(--full-bg) var(--full-bg-percent)), url("/img/tiletest.svg") , var(--full-bg);
+    min-height: 100%;
 }
 
 body {
