@@ -8,6 +8,17 @@
         <meta name="robots" content="noindex">
 
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+            #tagline {
+                text-align: center;
+            }
+            #tagline h1 {
+                margin-top: 0;
+                font-family: "Caveat", cursive;
+                color: #00a8f3;
+            }
+
             #projectcontainer {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -51,14 +62,10 @@
                 transform: translateY(0px);
             }
 
-            .ninebutton {
-                cursor: pointer;
-            }
-            #freebutton textarea {
-                resize: none;
-                width: 88px;
-                height: 31px;
-                border: none;
+            .project.ninebuttons .logo {
+                width: 176px;
+                height: 62px;
+                image-rendering: pixelated;
             }
         </style>
     </head>
@@ -68,6 +75,10 @@
         </header>
 
         <main>
+            <div id="tagline">
+                <h1>Fun for everynyan!</h1>
+            </div>
+
             <div id="projectcontainer">
                 <a href="quarky/index.html" class="projectlink"><div class="project quarky">
                     <img src="quarky/quarkymark.svg" class="logo">
@@ -89,21 +100,19 @@
                     <img src="img/notfound.svg" class="logo">
                     <p class="tagline">under construction</p>
                 </div>
-                <div class="project construction">
-                    <img src="img/notfound.svg" class="logo">
-                    <p class="tagline">under construction</p>
-                </div>
+                <a href="buttons.html" class="projectlink"><div class="project construction ninebuttons">
+                    <img src="img/buttons/transdark.png" class="logo">
+                    <p class="tagline">ninePLUS buttons</p>
+                </div></a>
             </div>
 
             <div id="freebutton">
-                <h2>ninePLUS buttons</h2>
-                <p>If you have your own website, you can add a ninePLUS button.</p>
-                <img src="img/buttons/transdark.png"> <textarea onclick="this.focus();this.select()" readonly="readonly"><a href="https://www.nineplus.sh"><img src="https://www.nineplus.sh/img/buttons/transdark.png"></a></textarea>
             </div>
         </main>
 
         <footer>
-            <img src="favicon.ico"> 2023-2024 ninePLUS. All rights reserved.
+            <p class="legal">2023-2024 ninePLUS. All rights reserved.</p>
+            <script src="clock.js"></script>
         </footer>
     </body>
 </html>
