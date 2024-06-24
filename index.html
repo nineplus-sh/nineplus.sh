@@ -37,8 +37,8 @@
                 user-select: none;
             }
             .project .logo {
-                width: 6em;
-                height: 5em;
+                max-width: 15em;
+                height: 6em;
             }
             .project .tagline {
                 margin-top: 0.5em;
@@ -67,6 +67,11 @@
                 height: 62px;
                 image-rendering: pixelated;
             }
+            .project.gameplus {
+                background-color: white;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
         </style>
     </head>
     <body>
@@ -84,19 +89,19 @@
                     <img src="quarky/quarkymark.svg" class="logo">
                     <p class="tagline">The world's silliest chat app.</p>
                 </div></a>
-                <div class="project construction">
+                <a href="https://gameplus.nineplus.sh" class="projectlink"><div class="project gameplus">
+                    <img src="https://gameplus.nineplus.sh/logo.png" class="logo">
+                    <p class="tagline">Quarky's game database</p>
+                </div></a>
+                <div class="project construction" aria-hidden="true">
                     <img src="img/notfound.svg" class="logo">
                     <p class="tagline">under construction</p>
                 </div>
-                <div class="project construction">
+                <div class="project construction" aria-hidden="true">
                     <img src="img/notfound.svg" class="logo">
                     <p class="tagline">under construction</p>
                 </div>
-                <div class="project construction">
-                    <img src="img/notfound.svg" class="logo">
-                    <p class="tagline">under construction</p>
-                </div>
-                <div class="project construction">
+                <div class="project construction" aria-hidden="true">
                     <img src="img/notfound.svg" class="logo">
                     <p class="tagline">under construction</p>
                 </div>
@@ -111,7 +116,7 @@
         </main>
 
         <footer>
-            <p class="legal">2023-2024 ninePLUS. All rights reserved.</p>
+            <p class="legal">2023-2024 ninePLUS. All rights reserved. Made by 🏳️‍⚧️🐈 in 🇳🇴</p>
             <script src="clock.js"></script>
         </footer>
     </body>
