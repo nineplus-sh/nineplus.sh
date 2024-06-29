@@ -10,13 +10,13 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
-            #tagline {
-                text-align: center;
-            }
             #tagline h1 {
-                margin-top: 0;
+                margin: 0;
                 font-family: "Caveat", cursive;
                 color: #00a8f3;
+            }
+            #tagline p {
+                margin-top: 0;
             }
 
             #projectcontainer {
@@ -72,6 +72,24 @@
                 border: 1px solid black;
                 box-sizing: border-box;
             }
+
+            @media screen and (max-width: 1500px) {
+                #projectcontainer {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 1em;
+                }
+                .project {
+                    flex-direction: row;
+                    height: 5em;
+                }
+                .project .logo {
+                    height: 4em;
+                    margin-right: 3em;
+                }
+                .project .tagline {
+                    margin: 0;
+                }
+            }
         </style>
     </head>
     <body>
@@ -81,8 +99,13 @@
 
         <main>
             <div id="tagline">
-                <h1>Fun for everynyan!</h1>
+                <h1>Fun for everynyan!™</h1>
+                <p>ninePLUS is a way to revitalize why I enjoy software. For the past years, software design and functionality has been very plain. But recently, I've seen software I use slowly drift back to designs I like. I'm not saying we should bring back skeuomorphism. <b>But we should bring back fun.</b></p>
+                <p>I don't think that's realistic for most developers, unfortunately. So I'm going to build in public, right here, and see what happens. A lot of what you're going to see will be unfinished, I tend to get distracted and procrastinate. But I hope you get what I'm going for, and I hope you like it.</p>
+                <p>You can <a href="/support.html">contact me</a> at any time if you want to leave feedback, praise, or hatred.</p>
             </div>
+
+            <hr>
 
             <div id="projectcontainer">
                 <a href="quarky/index.html" class="projectlink"><div class="project quarky">

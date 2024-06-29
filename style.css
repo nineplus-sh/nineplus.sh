@@ -20,6 +20,7 @@ body {
 header {
     height: 5em;
     width: 40vw;
+    min-width: 200px;
     margin: auto;
     display: block;
 
@@ -68,6 +69,17 @@ footer {
     border-radius: 0 0 25px 25px;
 }
 
+@media screen and (max-width: 1000px) {
+    main {
+        width: 90vw;
+        padding: 1em;
+    }
+    footer {
+        width: 90vw;
+        padding: 1em;
+    }
+}
+
 footer .legal {
     font-family: serif;
 }
@@ -77,6 +89,7 @@ footer .legal {
     background-color: #083ccf;
     font-size: 2em;
     width: fit-content;
+    height: fit-content;
     padding: 0.2em;
     border-radius: 10px;
 }
