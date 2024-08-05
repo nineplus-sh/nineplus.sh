@@ -26,6 +26,8 @@ User agent: GoogleOther
 User agent: GoogleOther-Image
 User agent: GoogleOther-Video
 User-agent: GPTBot
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
 User-agent: img2dataset
 User-agent: Meta-ExternalAgent
 User-agent: Meta-ExternalFetcher
@@ -35,6 +37,7 @@ User-agent: omgilibot
 User-agent: PerplexityBot
 User-agent: PetalBot
 User-agent: Scrapy
+User-agent: sentibot
 User-agent: Timpibot
 User-agent: VelenPublicWebCrawler
 User-agent: YouBot
